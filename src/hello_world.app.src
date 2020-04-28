@@ -1,0 +1,15 @@
+{application, hello_world,
+ [{description, "A Gleam program"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, {hello_world, []}},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+]}.
