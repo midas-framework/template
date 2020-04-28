@@ -2,7 +2,7 @@
 [{<<"gleam_stdlib">>,{pkg,<<"gleam_stdlib">>,<<"0.7.0">>},0},
  {<<"midas">>,
   {git,"git://github.com/did-app/midas.git",
-       {ref,"9843595589c747007a9a470ec406be3c04d8e31c"}},
+       {ref,"ab455df00206fe1a47783d8f5e05ace2b94dc116"}},
   0}]}.
 [
 {pkg_hash,[
