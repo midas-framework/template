@@ -2,7 +2,7 @@
  [{description, "A Gleam program"},
   {vsn, "0.1.0"},
   {registered, []},
-  {mod, {hello_world, []}},
+  {mod, {hello_world@application, []}},
   {applications,
    [kernel,
     stdlib
