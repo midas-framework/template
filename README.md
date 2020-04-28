@@ -1,7 +1,6 @@
 # hello_world
 
-A Gleam program
-
+A Midas/Gleam project template
 
 ## Quick start
 
@@ -14,16 +13,4 @@ rebar3 eunit
 
 # Run the Erlang REPL
 rebar3 shell
-```
-
-
-## Installation
-
-If [available in Hex](https://www.rebar3.org/docs/dependencies#section-declaring-dependencies)
-this package can be installed by adding `hello_world` to your `rebar.config` dependencies:
-
-```erlang
-{deps, [
-    hello_world
-]}.
 ```
