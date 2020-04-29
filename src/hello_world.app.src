@@ -5,7 +5,8 @@
   {mod, {hello_world@application, []}},
   {applications,
    [kernel,
-    stdlib
+    stdlib,
+    pgo
    ]},
   {env,[]},
   {modules, []},

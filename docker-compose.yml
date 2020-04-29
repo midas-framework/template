@@ -9,11 +9,28 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    depends_on:
+      - db
     volumes:
       - .:/opt/app
       # - gen:/opt/app/gen
       - _build:/opt/app/_build
+    environment:
+      - POSTGRES_HOST=127.0.0.1
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
     network_mode: host
     command: rebar3 shell
+    # TODO remove these options, a) move to docker image b) investigate rebar
+    # https://gist.github.com/tsloughter/87bd86c19b3f805240b5682fbfe3501e
     tty: true
     stdin_open: true
+
+  db:
+    image: "postgres:12.2"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
+    network_mode: host
