@@ -1,5 +1,9 @@
 version: "3"
 
+volumes:
+  # TODO reinstate gen dir
+  # gen:
+  _build:
 services:
   app:
     build:
@@ -7,8 +11,9 @@ services:
       dockerfile: Dockerfile
     volumes:
       - .:/opt/app
+      # - gen:/opt/app/gen
+      - _build:/opt/app/_build
     network_mode: host
     command: rebar3 shell
-    # command: ["rebar3", "shell"]
     tty: true
     stdin_open: true
