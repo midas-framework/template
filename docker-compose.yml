@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/opt/app
+    network_mode: host
+    command: rebar3 shell
+    # command: ["rebar3", "shell"]
+    tty: true
+    stdin_open: true
