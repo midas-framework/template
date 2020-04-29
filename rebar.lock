@@ -3,7 +3,7 @@
  {<<"gleam_stdlib">>,{pkg,<<"gleam_stdlib">>,<<"0.7.0">>},0},
  {<<"midas">>,
   {git,"git://github.com/did-app/midas.git",
-       {ref,"9a554f7159b27e4db39c3fcd4345dd73f4748ad3"}},
+       {ref,"6b669f97e37ad3b0b074883549a3ac45c39ad582"}},
   0},
  {<<"pg_types">>,{pkg,<<"pg_types">>,<<"0.2.0">>},1},
  {<<"pgo">>,{pkg,<<"pgo">>,<<"0.11.0">>},0},
