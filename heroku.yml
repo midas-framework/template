@@ -1,5 +1,5 @@
+build:
+  docker:
+    web: heroku.Dockerfile
 run:
-  web:
-    command:
-      - bash -c "rebar3 upgrade && rebar3 shell"
-    image: gleamlang/gleam
+  web: bash -c "rebar3 upgrade && rebar3 shell"
