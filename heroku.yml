@@ -1,4 +1,8 @@
 build:
   docker:
     web: Dockerfile
-    release: migration.Dockerfile
+    # Takes an age to build
+    # release: migration.Dockerfile
+release:
+  command:
+    - diesel migration run
