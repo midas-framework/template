@@ -1,5 +1,5 @@
-build:
-  docker:
-    web: Dockerfile
 run:
-  web: bash -c "rebar3 upgrade && rebar3 shell"
+  web:
+    command:
+      - bash -c "rebar3 upgrade && rebar3 shell"
+    image: gleamlang/gleam
