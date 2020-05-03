@@ -4,3 +4,5 @@ RUN wget -c https://github.com/gleam-lang/gleam/releases/download/v0.8.0-rc1/gle
 
 RUN mkdir -p /opt/app
 WORKDIR /opt/app
+
+COPY . .
