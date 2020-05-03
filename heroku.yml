@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: rebar3 shell
+  web: bash -c "rebar3 upgrade && rebar3 shell"
