@@ -6,7 +6,9 @@
   {applications,
    [kernel,
     stdlib,
-    pgo
+    pgo,
+    midas,
+    gleam_stdlib
    ]},
   {env,[]},
   {modules, []},
