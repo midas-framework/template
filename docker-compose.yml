@@ -8,7 +8,7 @@ services:
   app:
     build:
       context: .
-      dockerfile: heroku.Dockerfile
+      dockerfile: Dockerfile
     depends_on:
       - db
     # volumes:
@@ -24,7 +24,7 @@ services:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=postgres
     network_mode: host
-    command: bash -c "rebar3 release && _build/default/rel/hello_world/bin/hello_world foreground"
+    # command: bash -c "rebar3 release && _build/default/rel/hello_world/bin/hello_world foreground"
     # TODO remove these options, a) move to docker image b) investigate rebar
     # https://gist.github.com/tsloughter/87bd86c19b3f805240b5682fbfe3501e
     # tty: true
