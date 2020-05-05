@@ -8,6 +8,7 @@ import midas_utils
 fn init() {
   let Ok(config) = config.from_env()
 
+  // Be able to start server with ignore, if PORT not set.
   rest_for_one.Two(
     fn() { client.spawn_link(config) },
     fn(_pool) { endpoint.spawn_link(config) },

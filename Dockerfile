@@ -1,5 +1,7 @@
 FROM gleamlang/midas
 
+RUN apt-get update && apt-get install -y inotify-tools
+
 COPY . .
 
 # Done so generated files are available to heroku run bash
