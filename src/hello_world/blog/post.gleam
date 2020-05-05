@@ -1,3 +1,3 @@
-pub type Post(){
-    Post(id: Int, title: String)
+pub type Post {
+  Post(id: Int, title: String)
 }

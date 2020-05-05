@@ -1,7 +1,4 @@
-FROM gleamlang/gleam:latest
-
-RUN mkdir -p /opt/app
-WORKDIR /opt/app
+FROM gleamlang/midas
 
 COPY . .
 

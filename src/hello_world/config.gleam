@@ -4,11 +4,7 @@ import config/config.{get_env, required, optional}
 // Pull function from config for session config
 // everything should depend on config, config should not depend on libraries
 pub type Config {
-  Config(
-    port: Int,
-    secret_key_base: String,
-    database_url: String,
-  )
+  Config(port: Int, secret_key_base: String, database_url: String)
 }
 
 fn string(s) {

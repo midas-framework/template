@@ -8,7 +8,7 @@ services:
   app:
     build:
       context: .
-      dockerfile: framework.Dockerfile
+      dockerfile: Dockerfile
     depends_on:
       - db
     volumes:
@@ -16,13 +16,7 @@ services:
       # - gen:/opt/app/gen
       - _build:/opt/app/_build
     environment:
-      # Used by diesel
       - DATABASE_URL=postgres://postgres:postgres@127.0.0.1:5432/postgres
-      # Used by pgo config
-      # - POSTGRES_HOST=127.0.0.1
-      # - POSTGRES_USER=postgres
-      # - POSTGRES_PASSWORD=postgres
-      # - POSTGRES_DB=postgres
     network_mode: host
     # command: bash -c "rebar3 release && _build/default/rel/hello_world/bin/hello_world foreground"
     # TODO remove these options, a) move to docker image b) investigate rebar
