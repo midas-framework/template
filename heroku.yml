@@ -3,8 +3,8 @@ build:
     web: Dockerfile
     # Takes an age to build
     # release: migration.Dockerfile
-release:
-  # Could just make running the migrations part of default CMD in image
-  image: web
-  command:
-    - diesel migration run
+# release:
+#   # Could just make running the migrations part of default CMD in image
+#   image: web
+#   command:
+#     - diesel migration run
